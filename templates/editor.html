@@ -1,19 +1,22 @@
 {% extends 'index.html' %} {% block content %}
-
 <style>
-#center {
-  position: absolute;
-  width: 900px;
-  height: 200px;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -50px 0 0 -250px;
-}
+  #custom{
+      position: fixed;
+      top: 15%;
+      left: 20%;
+      margin-top: -50px;
+      margin-left: -150px;
+    }
 </style>
-
-<div id="center" class="text-white">
-  <h1> Under developement...! </h1>
-
+<div id="custom" class = "text-white"><h1> Add post </h1>
+<br>
+<div class = "form-group text-white">
+  <form method = "POST">
+    {% csrf_token %}
+    {{form.media}}
+    {{form.as_p }}
+    <button class="btn btn-secondary">Submit</button>
+  </form>
+</div>
 </div>
 {% endblock content %}

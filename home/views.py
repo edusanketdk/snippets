@@ -17,5 +17,9 @@ def about(request):
 def contact(request):
     return render(request, "contact.html")
 
-def editor(request):
-    return render(request, "editor.html")
+class editor(generic.CreateView):
+    model = blog
+    template_name = 'editor.html'
+    fields = "__all__"
+
+
