@@ -125,7 +125,7 @@ STATIC_URL = 'snippets/assets/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'snippets/assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'snippets/assets/')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
