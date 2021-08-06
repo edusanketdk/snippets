@@ -3,3 +3,5 @@ django-debug-toolbar==3.2.1
 virtualenv==20.4.7
 gunicorn
 django-ckeditor==6.1.0
+whitenoise==5.3.0
+
