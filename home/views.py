@@ -14,9 +14,6 @@ class blogDetail(generic.DetailView):
 def about(request):
     return render(request, "about.html")
 
-def contact(request):
-    return render(request, "contact.html")
-
 class editor(generic.CreateView):
     model = blog
     template_name = 'editor.html'
